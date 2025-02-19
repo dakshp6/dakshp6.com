@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Share&display=swap');
 
-.custom [data-kind="digit"]{
+.custom [data-mode="alpha"]{
   color: #f4f4f5;
   background-color: #27272a;
   font-size: 86px;
