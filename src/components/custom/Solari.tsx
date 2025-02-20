@@ -26,7 +26,7 @@ export default function Solari() {
   }, [step, displayStates]);
   
   useEffect(()=>{
-    const interval = setInterval(handleStepChange, 4000);
+    const interval = setInterval(handleStepChange, 3000);
     return () => clearInterval(interval);
   },[]);
 
@@ -35,7 +35,7 @@ export default function Solari() {
             <FlapDisplay
             className={`custom`}
             chars={" ABCDEFGHIJKLMNOPQRSTUVWXYZ!?.,'"}
-            length={displayLength}
+            length={18}
             value={displayStates[step]}
             timing={38}
             padMode={"auto"}

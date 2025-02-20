@@ -1,11 +1,17 @@
 import { Button } from "@/components/ui/button"
 import Solari from "@/components/custom/Solari";
 import { GoRocket } from "react-icons/go";
+import Link from "next/link";
+
 
 
 
 
 export default function Home() {
+
+  const github = process.env.GITHUB
+  const linkedin = process.env.LINKEDIN
+  const resume = process.env.RESUME
 
   return (
     <section className="h-full border border-blue-500 flex flex-col justify-between p-10 m-10">
@@ -28,10 +34,15 @@ export default function Home() {
         </div>
 
         <div className=" flex flex-row mt-4 gap-x-4 flex-shrink flex-wrap">
-          <Button variant="outline">LinkedIn</Button>
-          <Button variant="outline">GitHub</Button>
-          <Button variant="outline">Resume</Button>
-          <Button variant="outline">Email</Button>
+          <Button variant="outline" asChild >
+            <Link href={linkedin ?? "/"} rel="noopener noreferrer" target="_blank">LinkedIn</Link>
+          </Button>
+          <Button variant="outline" asChild>
+          <Link href={github ?? "/"} rel="noopener noreferrer" target="_blank">GitHub</Link>
+          </Button>
+          <Button variant="outline" asChild>
+          <Link href={resume ?? "/"} rel="noopener noreferrer" target="_blank">Resume</Link>
+          </Button>
         </div>
       </section>
 
@@ -39,11 +50,28 @@ export default function Home() {
 
           <div className="flex border border-yellow-500 m-10 p-8">
             
-
-
           </div>
 
       </section>
+
+
+      <section className="flex-1 border border-red-500 mt-10 p-10">
+
+      <div className="flex border border-yellow-500 m-10 p-8">
+        
+      </div>
+
+      </section>
+
+
+      <section className="flex-1 border border-red-500 mt-10 p-10">
+
+      <div className="flex border border-yellow-500 m-10 p-8">
+        
+      </div>
+
+      </section>
+      
 
 
     </section>
