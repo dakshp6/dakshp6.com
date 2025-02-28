@@ -13,7 +13,7 @@ export default function AudioPlayer() {
        
         <Audio
           playlist={[
-            { id: 1, src: '/assets/audio/funky-jam.mp3', name: 'funky-jam' },
+            { id: 1, src: 'https://cdn.pixabay.com/audio/2025/01/31/audio_7737066b01.mp3', name: 'funky-jam by T.S. Jones' },
           ]}
         >
           {({

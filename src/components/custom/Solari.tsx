@@ -7,11 +7,9 @@ import { setInterval } from "timers";
 
 export default function Solari() {
 
-  const [displayValue, setDisplayValue] = useState('Engineer');
-  const [displayLength, setDislayLength] = useState(16)
   const [step, setStep] = useState(0)
 
-  const displayStates = ['Is it a website?', 'Is it a jukebox?', 'It\'s.....', 'Daksh\'s Lounge'];
+  const displayStates = ['Is it a website?', 'Is it a jukebox?', 'It\'s...', 'Daksh\'s Lounge'];
 
   const handleStepChange = useCallback(() => {
     setStep((prevStep) => {
@@ -20,27 +18,21 @@ export default function Solari() {
     });
   }, [displayStates.length]);
 
-  useEffect(() => {
-    setDisplayValue(displayStates[step]);
-    setDislayLength(displayStates[step].length)
-  }, [step, displayStates]);
-  
   useEffect(()=>{
     const interval = setInterval(handleStepChange, 3000);
     return () => clearInterval(interval);
   },[]);
 
   return (
-          <div>
             <FlapDisplay
             className={`custom`}
             chars={" ABCDEFGHIJKLMNOPQRSTUVWXYZ!?.,'"}
-            length={18}
+            length={16}
             value={displayStates[step]}
             timing={38}
             padMode={"auto"}
             hinge={false}
           />
-          </div>
+
         )
 }
