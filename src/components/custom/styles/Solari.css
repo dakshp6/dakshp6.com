@@ -10,7 +10,6 @@
 @media (max-width: 20rem) {
 
   .custom [data-mode="alpha"]{
-    color: yellow;
 
     font-size: 0.5rem;
     line-height: normal;
@@ -21,8 +20,6 @@
 @media (min-width: 28rem) {
 
   .custom [data-mode="alpha"]{
-
-    color: black;
 
     font-size: 15px;
     line-height: normal;
@@ -35,8 +32,6 @@
 
   .custom [data-mode="alpha"]{
 
-    color: red;
-
     font-size: 20px;
     line-height: normal;
     width: 100%;
@@ -47,8 +42,6 @@
 @media (min-width: 48rem) {
 
   .custom [data-mode="alpha"]{
-
-    color: pink;
 
     font-size: 38px;
     line-height: normal;
@@ -61,8 +54,6 @@
 
   .custom [data-mode="alpha"]{
 
-    color: purple;
-
     font-size: 56px;
     line-height: normal;
     width: 100%;
@@ -74,8 +65,6 @@
 
   .custom [data-mode="alpha"]{
 
-    color: orange;
-
     font-size: 76px;
     line-height: normal;
     width: 100%;
@@ -86,8 +75,6 @@
 @media (min-width: 96rem) {
 
   .custom [data-mode="alpha"]{
-
-    color: teal;
 
     font-size: 84px;
     line-height: normal;

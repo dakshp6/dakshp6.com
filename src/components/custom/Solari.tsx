@@ -14,9 +14,16 @@ export default function Solari() {
   const handleStepChange = useCallback(() => {
     setStep((prevStep) => {
       const nextStep = prevStep + 1;
+      
       return nextStep >= displayStates.length ? prevStep : nextStep;
     });
   }, [displayStates.length]);
+
+  const handleLengthChange = useCallback(()=>{
+
+
+
+  }, []);
 
   useEffect(()=>{
     const interval = setInterval(handleStepChange, 3000);

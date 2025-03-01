@@ -3,6 +3,8 @@ import { GoRocket } from "react-icons/go";
 import Link from "next/link";
 import AudioPlayer from "@/components/custom/AudioPlayer";
 import Display from "@/components/custom/Display";
+import Image from "next/image";
+import daksh from "../../public/daksh.png"
 
 
 export default function Home() {
@@ -17,10 +19,6 @@ export default function Home() {
       
       <section id="Solari" className="border border-red-500 flex-1 flex flex-row justify-center gap-x-2 p-8">
         
-        <div className="border border-yellow-500 flex items-center">
-          <GoRocket className="xs:size-2 sm:size-4 md:size-8 lg:size-16 xl:size-16 2xl:size-20 fill-zinc-100"/>
-        </div>
-        
         <div className="border border-white-500 flex items-center">
           <Display/>
         </div>
@@ -28,21 +26,30 @@ export default function Home() {
 
       <section id="body" className="flex-1 border border-red-500 mt-10 flex flex-col items-start gap-y-4 p-10">
 
-      <div className="border border-yellow-500">
-        <div>
-          This is the body to my website, I intend to use this space to discuss about nothing really, but it would be a good place to park my projects and resume links or something. Not sure yet!
+      <div className="border border-yellow-500 p-4 flex flex-row gap-x-4 h-full">
+
+        <div className="border border-green-500 place-content-center w-72">
+          <Image src={daksh} alt={""} className="bg-zinc-100 rounded-full" ></Image>
         </div>
 
-        <div className="flex flex-row mt-4 gap-x-4 flex-shrink flex-wrap">
-          <Button variant="outline" asChild >
-            <Link href={linkedin ?? "/"} rel="noopener noreferrer" target="_blank">LinkedIn</Link>
-          </Button>
-          <Button variant="outline" asChild>
-          <Link href={github ?? "/"} rel="noopener noreferrer" target="_blank">GitHub</Link>
-          </Button>
-          <Button variant="outline" asChild>
-          <Link href={resume ?? "/"} rel="noopener noreferrer" target="_blank">Resume</Link>
-          </Button>
+        <div className="mt-10 border border-pink-500 flex flex-col gap-y-4 p-2">
+
+          <div>
+            Hi! Welcome to Daksh's Lounge. I'm Daksh and this is my digital lounge where you can listen to music and have some fun getting to know me. Feel free to poke around and find the little easter eggs on my site :) . 
+            If you didn't know already, I'm big on music and creativity in general, so this website was my way to make a portfolio but also expressing my personality through code! Check out the links below if you want to connect professionally.
+          </div>
+
+          <div className="flex flex-row mt-4 gap-x-4 flex-shrink flex-wrap justify-center">
+            <Button variant="outline" asChild >
+              <Link href={linkedin ?? "/"} rel="noopener noreferrer" target="_blank">LinkedIn</Link>
+            </Button>
+            <Button variant="outline" asChild>
+            <Link href={github ?? "/"} rel="noopener noreferrer" target="_blank">GitHub</Link>
+            </Button>
+            <Button variant="outline" asChild>
+            <Link href={resume ?? "/"} rel="noopener noreferrer" target="_blank">Resume</Link>
+            </Button>
+          </div>
         </div>
       </div>
       </section>

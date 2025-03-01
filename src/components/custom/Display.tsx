@@ -22,17 +22,14 @@ export default function Display(){
       }, []);
 
 
-      if (windowWidth <= 448)
+      if (windowWidth >= 448)
       {
-        return <h1>Daksh's Lounge</h1>
-      }
-      else
-      {
-
         return <div>
-          <Solari/>
-        </div>
-
+        <Solari/>
+      </div>
+      }
+      else{
+        return <div></div>
       }
 
 

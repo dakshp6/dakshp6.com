@@ -8,8 +8,8 @@ body {
   --text-color: #f4f4f5;        /* Light text */
   --primary-color: #4CAF50;     /* Primary color for buttons */
   font-family: 'Share';
-  font-weight: bold;
-  font-size: medium;
+  font-weight: normal;
+  font-size: x-large;
 }
 
 @layer base {

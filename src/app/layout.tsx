@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+
 export const metadata: Metadata = {
   title: "Daksh's Lounge",
+  icons: {
+    icon: "/daksh.png"
+  }
 };
 
 export default function RootLayout({
