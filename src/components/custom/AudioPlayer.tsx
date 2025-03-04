@@ -40,7 +40,7 @@ export default function AudioPlayer() {
 
                     <div className='flex flex-col text-zinc-100'>
                       <span className='capitalize'>
-                        {/* @ts-ignore */}
+                        {/* @ts-expect-error "WIP"*/}
                         {playlist[trackIndex].name.split(/-/).join(' ')}
                       </span>
                       <span>{formatTime(currentTime)}</span>

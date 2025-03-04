@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useRef, useCallback } from "react"
+import { useEffect, useState, useCallback } from "react"
 import '@/components/custom/styles/Solari.css'
 import {FlapDisplay} from 'react-split-flap-effect'
 import { setInterval } from "timers";
@@ -21,7 +21,7 @@ export default function Solari() {
   useEffect(()=>{
     const interval = setInterval(handleStepChange, 3000);
     return () => clearInterval(interval);
-  },[]);
+  },[handleStepChange]);
 
   return (
             <FlapDisplay

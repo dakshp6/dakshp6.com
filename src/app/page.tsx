@@ -1,16 +1,12 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link";
-import AudioPlayer from "@/components/custom/AudioPlayer";
 import Display from "@/components/custom/Display";
-import Image from "next/image";
-import daksh from "../../public/daksh.png"
 
 
 export default function Home() {
 
   const github = process.env.GITHUB
   const linkedin = process.env.LINKEDIN
-  const resume = process.env.RESUME
 
   return (
   <div>
@@ -38,7 +34,7 @@ export default function Home() {
         <div className="flex flex-col m-10 lg:m-0 gap-y-4 p-2">
 
           <div>
-            Hi! Welcome to my lounge. I'm Daksh and this is my digital corner where soon you'll be able to listen to music and have some fun getting to know me :) . 
+            Hi! Welcome to my lounge. I&apos;m Daksh and this is my digital corner where soon you&apos;ll be able to listen to music and have some fun getting to know me :) . 
             This website will become a home for my portfolio and also a way for me to show off a bit of my personality! Check out the links below if you want to connect with me!
           </div>
 
