@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Daksh's Lounge",
   icons: {
-    icon: "/daksh.png"
+    icon: "/daksh_icon.png"
   }
 };
 

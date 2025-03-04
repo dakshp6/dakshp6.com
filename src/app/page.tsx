@@ -14,71 +14,74 @@ export default function Home() {
 
   return (
   <div>
-    <section id = "body" className="border border-blue-500 flex flex-col items-center p-10 m-10 overflow-hidden">
+    <section id = "body" className="flex flex-col items-center p-10 m-10 overflow-hidden">
       
-      <section id="Solari" className="border border-red-500 flex-1 flex justify-center gap-x-2 p-8">
+      <section id="Solari" className="flex-1 flex items-start p-10 w-full">
         
-        <div className="border border-white-500 flex items-center">
+        <div className="p-4">
           <Display/>
         </div>
       </section>
 
-      <section id="content" className="flex-1 border border-red-500 mt-10 flex flex-col items-start gap-y-4 p-10">
+      <section id="content" className="flex-1 flex flex-col gap-y-4 p-10">
 
-      <div className="border border-yellow-500 p-4 flex flex-col lg:flex-row gap-x-4 items-center">
+      <div className="p-4 flex flex-col lg:flex-row gap-x-4 items-center">
 
+{
+/*
         <div className="border border-green-500 place-content-center">
-          <Image src={daksh} alt={""} className="bg-zinc-100 rounded-full sm:w-1/2 md:w-1/2 lg:w-full xl:w-auto" ></Image>
+          {<Image src={daksh} alt={""} className="bg-zinc-100 rounded-full min-w-64 sm:w-80 md:w-80 lg:w-auto xl:w-96" ></Image>}
         </div>
+*/
+}
 
-        <div className="mt-10 border border-pink-500 flex flex-col gap-y-4 p-2">
+        <div className="flex flex-col m-10 lg:m-0 gap-y-4 p-2">
 
           <div>
-            Hi! Welcome to Daksh's Lounge. I'm Daksh and this is my digital lounge where you can listen to music and have some fun getting to know me. Feel free to poke around and find the little easter eggs on my site :) . 
-            If you didn't know already, I'm big on music and creativity in general, so this website was my way to make a portfolio but also expressing my personality through code! Check out the links below if you want to connect professionally.
+            Hi! Welcome to my lounge. I'm Daksh and this is my digital corner where soon you'll be able to listen to music and have some fun getting to know me :) . 
+            This website will become a home for my portfolio and also a way for me to show off a bit of my personality! Check out the links below if you want to connect with me!
           </div>
 
-          <div className="flex flex-row mt-4 gap-x-4 flex-shrink flex-wrap justify-center">
-            <Button variant="outline" asChild >
+          <div className="flex flex-row mt-12 gap-x-12 size-lg place-content-center">
+            <Button variant="outline" className="h-12">
               <Link href={linkedin ?? "/"} rel="noopener noreferrer" target="_blank">LinkedIn</Link>
             </Button>
-            <Button variant="outline" asChild>
+            <Button variant="outline" className="h-12">
             <Link href={github ?? "/"} rel="noopener noreferrer" target="_blank">GitHub</Link>
-            </Button>
-            <Button variant="outline" asChild>
-            <Link href={resume ?? "/"} rel="noopener noreferrer" target="_blank">Resume</Link>
             </Button>
           </div>
         </div>
       </div>
       </section>
+{
 
-      <section className="flex-1 border border-red-500 mt-10 p-10">
+/*
 
-          <div className="flex border items-center border-yellow-500 m-10 p-8">
-            Test1
+      <section className="flex-1 mt-10 p-10">
+
+          <div className="flex items-center m-10 p-8">
           </div>
 
       </section>
 
 
-      <section className="flex-1 border border-red-500 mt-10 p-10">
+      <section className="flex-1 mt-10 p-10">
 
-        <div className="flex border border-yellow-500 m-10 p-8">
-          Test2
+        <div className="flex m-10 p-8">
         </div>
 
       </section>
 
 
-      <section className="flex-1 border border-red-500 mt-10 p-10">
+      <section className="flex-1 mt-10 p-10">
 
-        <div className="flex border border-yellow-500 m-10 p-8">
-          Test3
+        <div className="flex m-10 p-8">
         </div>
 
       </section>
-    </section>
+*/
+}
+      </section>
 
     <footer className="fixed bottom-0">
     </footer>
