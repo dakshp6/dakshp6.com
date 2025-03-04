@@ -30,7 +30,7 @@ export default function Display(){
       }
       else{
         return <div className="text-5xl">
-          Daksh's Lounge
+          Daksh&apos;s Lounge
         </div>
       }
 

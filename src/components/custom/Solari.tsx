@@ -18,7 +18,7 @@ export default function Solari() {
     });
   }, [displayStates.length]);
 
-  const length = useMemo(()=> calculateLength(), [step, displayStates.length])
+  const length = useMemo(()=> calculateLength(), [calculateLength])
 
   function calculateLength() {
 
