@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button"
-import { GoRocket } from "react-icons/go";
 import Link from "next/link";
 import AudioPlayer from "@/components/custom/AudioPlayer";
 import Display from "@/components/custom/Display";
@@ -15,21 +14,21 @@ export default function Home() {
 
   return (
   <div>
-    <section className="border border-blue-500 flex flex-col items-center p-10 m-10">
+    <section id = "body" className="border border-blue-500 flex flex-col items-center p-10 m-10 overflow-hidden">
       
-      <section id="Solari" className="border border-red-500 flex-1 flex flex-row justify-center gap-x-2 p-8">
+      <section id="Solari" className="border border-red-500 flex-1 flex justify-center gap-x-2 p-8">
         
         <div className="border border-white-500 flex items-center">
           <Display/>
         </div>
       </section>
 
-      <section id="body" className="flex-1 border border-red-500 mt-10 flex flex-col items-start gap-y-4 p-10">
+      <section id="content" className="flex-1 border border-red-500 mt-10 flex flex-col items-start gap-y-4 p-10">
 
-      <div className="border border-yellow-500 p-4 flex flex-row gap-x-4 h-full">
+      <div className="border border-yellow-500 p-4 flex flex-col lg:flex-row gap-x-4 items-center">
 
-        <div className="border border-green-500 place-content-center w-72">
-          <Image src={daksh} alt={""} className="bg-zinc-100 rounded-full" ></Image>
+        <div className="border border-green-500 place-content-center">
+          <Image src={daksh} alt={""} className="bg-zinc-100 rounded-full sm:w-1/2 md:w-1/2 lg:w-full xl:w-auto" ></Image>
         </div>
 
         <div className="mt-10 border border-pink-500 flex flex-col gap-y-4 p-2">
@@ -65,18 +64,18 @@ export default function Home() {
 
       <section className="flex-1 border border-red-500 mt-10 p-10">
 
-      <div className="flex border border-yellow-500 m-10 p-8">
-        Test2
-      </div>
+        <div className="flex border border-yellow-500 m-10 p-8">
+          Test2
+        </div>
 
       </section>
 
 
       <section className="flex-1 border border-red-500 mt-10 p-10">
 
-      <div className="flex border border-yellow-500 m-10 p-8">
-        Test3
-      </div>
+        <div className="flex border border-yellow-500 m-10 p-8">
+          Test3
+        </div>
 
       </section>
     </section>
