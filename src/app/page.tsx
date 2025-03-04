@@ -14,7 +14,7 @@ export default function Home() {
       
       <section id="Solari" className="flex-1 flex justify-center p-10 w-full">
         
-        <div className="p-4">
+        <div className="border border-zinc-500 p-4">
           <Display/>
         </div>
       </section>

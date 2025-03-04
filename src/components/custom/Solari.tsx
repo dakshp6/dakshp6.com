@@ -18,17 +18,15 @@ export default function Solari() {
     });
   }, [displayStates.length]);
 
-  const length = useMemo(()=> calculateLength(), [calculateLength])
-
-  function calculateLength() {
+  const length = useMemo(()=> {
 
     if(step == displayStates.length-1)
-    {
-      return displayStates[step].length
-    }
-    return 16
+      {
+        return displayStates[step].length
+      }
+      return 16
 
-  }
+  }, [step, displayStates.length])
 
   useEffect(()=>{
     const interval = setInterval(handleStepChange, 3000);
