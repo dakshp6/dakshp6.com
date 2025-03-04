@@ -9,7 +9,7 @@ export default function Solari() {
 
   const [step, setStep] = useState(0)
 
-  const displayStates = ['Is it a website?', 'Is it a jukebox?', 'It\'s...', 'Daksh\'s Lounge'];
+  const displayStates = useMemo(() => ['Is it a website?', 'Is it a jukebox?', 'It\'s...', 'Daksh\'s Lounge'], []);
 
   const handleStepChange = useCallback(() => {
     setStep((prevStep) => {
