@@ -26,7 +26,7 @@ export default function Solari() {
       }
       return 16
 
-  }, [step, displayStates.length])
+  }, [step, displayStates])
 
   useEffect(()=>{
     const interval = setInterval(handleStepChange, 3000);
