@@ -12,7 +12,7 @@ export default function Home() {
   <div>
     <section id = "body" className="flex flex-col items-center p-10 m-10 overflow-hidden">
       
-      <section id="Solari" className="flex-1 flex items-start p-10 w-full">
+      <section id="Solari" className="flex-1 flex justify-center p-10 w-full">
         
         <div className="p-4">
           <Display/>
