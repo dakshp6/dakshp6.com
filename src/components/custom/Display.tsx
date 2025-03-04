@@ -29,7 +29,9 @@ export default function Display(){
       </div>
       }
       else{
-        return <div></div>
+        return <div className="text-5xl">
+          Daksh's Lounge
+        </div>
       }
 
 

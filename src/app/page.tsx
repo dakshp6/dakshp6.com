@@ -31,14 +31,14 @@ export default function Home() {
 */
 }
 
-        <div className="flex flex-col m-10 lg:m-0 gap-y-4 p-2">
+        <div className="flex flex-col m-10 lg:m-0 gap-y-12 p-2">
 
-          <div>
+          <div className="">
             Hi! Welcome to my lounge. I&apos;m Daksh and this is my digital corner where soon you&apos;ll be able to listen to music and have some fun getting to know me :) . 
             This website will become a home for my portfolio and also a way for me to show off a bit of my personality! Check out the links below if you want to connect with me!
           </div>
 
-          <div className="flex flex-row mt-12 gap-x-12 size-lg place-content-center">
+          <div className="flex flex-row gap-x-8 justify-center">
             <Button variant="outline" className="h-12">
               <Link href={linkedin ?? "/"} rel="noopener noreferrer" target="_blank">LinkedIn</Link>
             </Button>
