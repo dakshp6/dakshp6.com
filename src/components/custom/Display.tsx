@@ -29,7 +29,7 @@ export default function Display(){
       </div>
       }
       else{
-        return <div className="text-5xl">
+        return <div className="text-4xl text-nowrap">
           Daksh&apos;s Lounge
         </div>
       }
