@@ -39,10 +39,10 @@ export default function Home() {
           </div>
 
           <div className="flex flex-row gap-x-8 justify-center">
-            <Button variant="outline" className="h-12">
+            <Button variant="outline" asChild className="h-12">
               <Link href={linkedin ?? "/"} rel="noopener noreferrer" target="_blank">LinkedIn</Link>
             </Button>
-            <Button variant="outline" className="h-12">
+            <Button variant="outline" asChild className="h-12">
             <Link href={github ?? "/"} rel="noopener noreferrer" target="_blank">GitHub</Link>
             </Button>
           </div>
