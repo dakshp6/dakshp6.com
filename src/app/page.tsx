@@ -21,7 +21,7 @@ export default function Home() {
 
       <section id="content" className="flex-1 flex flex-col gap-y-4 p-10">
 
-      <div className="p-4 flex flex-col lg:flex-row gap-x-4 items-center">
+        <div className="p-4 flex flex-col lg:flex-row gap-x-4 items-center">
 
 {
 /*
@@ -31,23 +31,23 @@ export default function Home() {
 */
 }
 
-        <div className="flex flex-col m-10 lg:m-0 gap-y-12 p-2">
+          <div className="flex flex-col m-10 lg:m-0 gap-y-12 p-2">
 
-          <div className="">
-            Hi! Welcome to my lounge. I&apos;m Daksh and this is my digital corner where soon you&apos;ll be able to listen to music and have some fun getting to know me :) . 
-            This website will become a home for my portfolio and also a way for me to show off a bit of my personality! Check out the links below if you want to connect with me!
-          </div>
+            <div className="">
+              Hi! Welcome to my lounge. I&apos;m Daksh and this is my digital corner where soon you&apos;ll be able to listen to music and have some fun getting to know me :) . 
+              This website will become a home for my portfolio and also a way for me to show off a bit of my personality! Check out the links below if you want to connect with me!
+            </div>
 
-          <div className="flex flex-row gap-x-8 justify-center">
-            <Button variant="outline" asChild className="h-12">
-              <Link href={linkedin ?? "/"} rel="noopener noreferrer" target="_blank">LinkedIn</Link>
-            </Button>
-            <Button variant="outline" asChild className="h-12">
-            <Link href={github ?? "/"} rel="noopener noreferrer" target="_blank">GitHub</Link>
-            </Button>
+            <div className="flex flex-row gap-x-8 justify-center">
+              <Button variant="outline" asChild className="h-12">
+                <Link href={linkedin ?? "/"} rel="noopener noreferrer" target="_blank">LinkedIn</Link>
+              </Button>
+              <Button variant="outline" asChild className="h-12">
+              <Link href={github ?? "/"} rel="noopener noreferrer" target="_blank">GitHub</Link>
+              </Button>
+            </div>
           </div>
         </div>
-      </div>
       </section>
 {
 
@@ -78,9 +78,12 @@ export default function Home() {
 */
 }
       </section>
-
+{
+/*
     <footer className="fixed bottom-0">
     </footer>
+*/
+}
   </div>
   );
 }
