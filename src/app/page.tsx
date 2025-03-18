@@ -29,7 +29,7 @@ export default function Home() {
           <div className="text-sm md:text-lg lg:text-xl xl:text-2xl p-4 lg:p-8 xl:p-12">
             Hey there! Welcome to my little corner of the internet. I&apos;m Daksh, and this is my digital lounge. 
             A space where you&apos;ll soon be able to enjoy some music and venture into my world. 
-            Think of this site as part portfolio and part playground, where I can show off my work and my personality. If you want to connect with me, check out the links below! :)
+            Think of this site as part portfolio and part playground, where I can show off my work and my personality. If you want to connect with me, check out the links below! 🙂
           </div>
 
           <div className="flex flex-row gap-x-12 place-content-center">
