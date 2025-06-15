@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Solari from "./Solari";
-import "@/components/custom/styles/Display.css"
+import "@/components/ui/styles/Display.css"
 
 
 export default function Display(){

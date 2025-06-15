@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, useCallback, useMemo } from "react"
-import '@/components/custom/styles/Solari.css'
+import '@/components/ui/styles/Solari.css'
 import {FlapDisplay} from 'react-split-flap-effect'
 import { setInterval } from "timers";
 
