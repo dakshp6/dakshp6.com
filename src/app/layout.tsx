@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/custom/Navbar";
+import AudioPlayer from "@/components/custom/AudioPlayer";
 
 
 export const metadata: Metadata = {
@@ -20,6 +21,8 @@ export default function RootLayout({
       <body className="bg-background text-text w-full h-full">
         <Navbar/>
         {children}
+
+        <AudioPlayer></AudioPlayer>
       </body>
     </html>
   );

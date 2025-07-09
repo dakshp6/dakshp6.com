@@ -32,7 +32,7 @@ export default function AudioPlayer() {
             forwardTrack,
             setCurrentTime,
           }) => (
-            <div>
+            <div className="bg-zinc-800 border-b border-zinc-600 p-4 sticky bottom-0 container mx-auto flex justify-between items-center">
               <div className='flex'>
                 <div className='flex max-md:flex-col justify-center gap-4 w-full'>
                   <div className='flex items-center gap-4'>
