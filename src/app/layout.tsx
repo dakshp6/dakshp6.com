@@ -19,13 +19,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-background text-text w-full h-full">
-        <Navbar/>
-
-        <main className="pb-32">
+      <body className="bg-background text-text w-full flex flex-col min-h-screen">
+        <header className="sticky top-0 z-50 w-full p-4 bg-zinc-800 border-b border-zinc-600">
+          <Navbar/>
+        </header>
+        <main className="flex-1 p-4 pb-24">
           {children}
         </main>
-        <AudioPlayer></AudioPlayer>
+        <footer className="border-t border-zinc-600 fixed bottom-0 w-full">
+          <AudioPlayer/>
+        </footer>
       </body>
     </html>
   );

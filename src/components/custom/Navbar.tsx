@@ -12,7 +12,7 @@ const links = [
 export default function Navbar()
 {
     return (
-        <nav className="bg-zinc-800 border-b border-zinc-600 p-4">
+        <nav className="">
             <div className="container mx-auto flex justify-between items-center">
             { links.map((link) =>{
 

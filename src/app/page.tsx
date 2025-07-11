@@ -12,38 +12,18 @@ export default function Home() {
   <div>
     <section id = "body" className="flex flex-col items-start gap-y-6 overflow-hidden p-4">
       
-      <section id="Space" className=""/>
-
       <section id="Solari" className="flex-1 flex justify-center w-full p-4 lg:p-8 xl:p-10">
         
-        <div className="">
-
-          <Display/>
+        <Display/>
         
-        </div>
-
       </section>
 
       <section id="content" className="flex-1 flex flex-col gap-y-8 justify-center items-center p-4 lg:p-8 xl:p-10  w-full">
-
           <div className="text-sm md:text-lg lg:text-xl xl:text-2xl p-4 lg:p-8 xl:p-12">
-            Hey there! Welcome to my little corner of the internet. I&apos;m Daksh, and this is my digital lounge. 
-            This is a space where you can enjoy some music and venture into my world. 
-            Think of this site as part portfolio and part playground, you can see a bit of my work and my personality. 🙂
+            Hey there! Welcome to my little corner of the internet.
+            I&apos;m Daksh, and this is my digital lounge: a mix of projects, recent learnings, and hidden surprises.
+            Oh, and there&apos;s a funky playlist for you while you explore. 🎶 Have fun!
           </div>
-
-          <div className="flex flex-row gap-x-12 place-content-center">
-
-            <Button variant="outline" asChild className="text-sm md:text-lg lg:text-xl xl:text-2xl lg:h-12 lg:w-24 xl:h-16 xl:w-32">
-              <Link href={linkedin ?? "/"} rel="noopener noreferrer" target="_blank">LinkedIn</Link>
-            </Button>
-            
-            <Button variant="outline" asChild className="text-sm md:text-lg lg:text-xl xl:text-2xl lg:h-12 lg:w-24 xl:h-16 xl:w-32">
-              <Link href={github ?? "/"} rel="noopener noreferrer" target="_blank">GitHub</Link>
-            </Button>
-          
-          </div>
-
       </section>
     </section>
   </div>
