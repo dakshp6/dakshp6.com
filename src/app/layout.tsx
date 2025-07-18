@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/custom/Navbar";
 import AudioPlayer from "@/components/custom/AudioPlayer";
-import { Main } from "next/document";
 
 
 export const metadata: Metadata = {
@@ -27,7 +26,8 @@ export default function RootLayout({
           {children}
         </main>
         <footer className="border-t border-zinc-600 fixed bottom-0 w-full">
-          <AudioPlayer/>
+          {/*Below causes hydration error, will fix later.*/}
+          {/*<AudioPlayer/>*/}
         </footer>
       </body>
     </html>

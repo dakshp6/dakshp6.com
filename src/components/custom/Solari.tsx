@@ -2,8 +2,11 @@
 
 import { useEffect, useState, useCallback, useMemo } from "react"
 import '@/components/ui/styles/Solari.css'
-import {FlapDisplay} from 'react-split-flap-effect'
+import { FlapDisplay } from 'react-split-flap-effect'
 import { setInterval } from "timers";
+import ClientOnly from "../common/ClientOnly";
+import SolariPlaceholder from "./placeholders/SolariPlaceholder";
+import FlapDisplayPlaceholder from "./placeholders/FlapDisplayPlaceholder";
 
 export default function Solari() {
 
@@ -18,31 +21,31 @@ export default function Solari() {
     });
   }, [displayStates.length]);
 
-  const length = useMemo(()=> {
+  const length = useMemo(() => {
 
-    if(step == displayStates.length-1)
-      {
-        return displayStates[step].length
-      }
-      return 16
+    if (step == displayStates.length - 1) {
+      return displayStates[step].length
+    }
+    return 16
 
   }, [step, displayStates])
 
-  useEffect(()=>{
+  useEffect(() => {
     const interval = setInterval(handleStepChange, 3000);
     return () => clearInterval(interval);
-  },[handleStepChange]);
+  }, [handleStepChange]);
 
   return (
-            <FlapDisplay
-            className={`custom`}
-            chars={" ABCDEFGHIJKLMNOPQRSTUVWXYZ!?.,'"}
-            length={length}
-            value={displayStates[step]}
-            timing={38}
-            padMode={"auto"}
-            hinge={false}
-          />
-
-        )
+    <ClientOnly placeholder={<FlapDisplayPlaceholder/>}>
+      <FlapDisplay
+        className={`custom`}
+        chars={" ABCDEFGHIJKLMNOPQRSTUVWXYZ!?.,'"}
+        length={length}
+        value={displayStates[step]}
+        timing={38}
+        padMode={"auto"}
+        hinge={false}
+      />
+    </ClientOnly>
+  )
 }
