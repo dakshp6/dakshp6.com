@@ -1,16 +1,12 @@
 import Display from "@/components/custom/Display";
 import ClientOnly from "@/components/common/ClientOnly";
-import SolariPlaceholder from "@/components/custom/placeholders/SolariPlaceholder";
 import DisplayPlaceholder from "@/components/custom/placeholders/DisplayPlaceholder";
 
 
 export default function Home() {
 
-  const github = process.env.GITHUB
-  const linkedin = process.env.LINKEDIN
-
   return (
-    <div>
+    <>
       <section id="body" className="flex flex-col items-start gap-y-6 overflow-hidden p-4">
 
         <section id="Solari" className="flex-1 flex justify-center w-full p-4 lg:p-8 xl:p-10">
@@ -27,6 +23,6 @@ export default function Home() {
           </div>
         </section>
       </section>
-    </div>
+    </>
   );
 }
