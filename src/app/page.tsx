@@ -14,7 +14,6 @@ export default function Home() {
       <section id="body" className="flex flex-col items-start gap-y-6 overflow-hidden p-4">
 
         <section id="Solari" className="flex-1 flex justify-center w-full p-4 lg:p-8 xl:p-10">
-
           <ClientOnly placeholder={<DisplayPlaceholder/>}>
             <Display />
           </ClientOnly>

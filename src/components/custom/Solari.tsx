@@ -36,7 +36,7 @@ export default function Solari() {
   }, [handleStepChange]);
 
   return (
-    <ClientOnly placeholder={<FlapDisplayPlaceholder/>}>
+    <ClientOnly placeholder={<FlapDisplayPlaceholder className="custom" />}>
       <FlapDisplay
         className={`custom`}
         chars={" ABCDEFGHIJKLMNOPQRSTUVWXYZ!?.,'"}

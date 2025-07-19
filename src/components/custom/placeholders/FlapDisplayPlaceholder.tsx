@@ -1,5 +1,12 @@
-export default function FlapDisplayPlaceholder() {
+import clsx from "clsx";
+
+export default function FlapDisplayPlaceholder({ className = "" }) {
     return (
-        <div className="w-full p-4 lg:p-8 xl:p-10"/>
+        <div
+            className={clsx(
+                "w-full",
+                className
+            )}
+        />
     );
 }
